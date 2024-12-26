@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
-const database = "mongodb://localhost:27017";
+const database = "mongodb://localhost:27017/test";
 
 const connectWithRetry = () => {
     mongoose
