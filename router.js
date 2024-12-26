@@ -24,16 +24,16 @@ router.get("/authors/exceeding-limit", authorController.getAuthorsExceedingLimit
 router.post("/book/create", bookController.createBook);
 router.get("/books", bookController.getBooks);
 router.put("/book/:id", bookController.updateBook);
-router.get("/books/available", bookController.getAvailableBooks);
+// router.get("/books/available", bookController.getAvailableBooks);
 router.delete("/book/:id", bookController.deleteBook);
-n
+
 // Borrower routes
 router.post("/borrower/create", borrowerController.createBorrower);
 router.get("/borrowers", borrowerController.getBorrowers);
 router.put("/borrower/:id", borrowerController.updateBorrower);
 router.get("/borrower/:id", borrowerController.getBorrowerById);
-router.delete("/borrower/:id", borrowerController.deleteBorrower);
-router.get("/borrowers/overdue", borrowerController.getOverdueBorrowers);
+// router.delete("/borrower/:id", borrowerController.deleteBorrower);
+// router.get("/borrowers/overdue", borrowerController.getOverdueBorrowers);
 
 // Borrowing routes
 router.post("/borrow", borrowController.borrowBook);
