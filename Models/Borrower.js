@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 // Models/Borrower.js
 const borrowerSchema = new mongoose.Schema({
     name: {
